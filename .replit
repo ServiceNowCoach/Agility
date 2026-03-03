@@ -1,0 +1,13 @@
+run = "pnpm install && pnpm build && pnpm preview"
+
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "pnpm install && pnpm build && pnpm preview"]
+deploymentTarget = "static"
+publicDir = "dist"
+
+[[ports]]
+localPort = 4173
+externalPort = 80

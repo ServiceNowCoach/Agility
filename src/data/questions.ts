@@ -1,0 +1,73 @@
+import type { Question } from '@/types'
+
+export const questions: Question[] = [
+  // ─── TEAM (12 questions) ──────────────────────────────────────────────────
+  { id: 't1',  category: 'Team', text: 'Team conducts sprint planning with clear goals and acceptance criteria.', weight: 3, maxScore: 5 },
+  { id: 't2',  category: 'Team', text: 'Daily stand-ups are time-boxed, focused, and result in actionable outcomes.', weight: 2, maxScore: 5 },
+  { id: 't3',  category: 'Team', text: 'Sprint reviews include stakeholders and result in validated feedback.', weight: 3, maxScore: 5 },
+  { id: 't4',  category: 'Team', text: 'Retrospectives lead to measurable process improvements.', weight: 2, maxScore: 5 },
+  { id: 't5',  category: 'Team', text: 'Definition of Done is agreed upon and consistently applied.', weight: 3, maxScore: 5 },
+  { id: 't6',  category: 'Team', text: 'Team velocity is tracked and used for planning.', weight: 2, maxScore: 5 },
+  { id: 't7',  category: 'Team', text: 'The team practices continuous integration and automated testing.', weight: 3, maxScore: 5 },
+  { id: 't8',  category: 'Team', text: 'Team members collaborate cross-functionally without silos.', weight: 2, maxScore: 5 },
+  { id: 't9',  category: 'Team', text: 'Work-in-progress (WIP) limits are set and respected.', weight: 2, maxScore: 5 },
+  { id: 't10', category: 'Team', text: 'The team uses a visible, up-to-date backlog to manage work.', weight: 2, maxScore: 5 },
+  { id: 't11', category: 'Team', text: 'Team has a shared understanding of product vision.', weight: 2, maxScore: 5 },
+  { id: 't12', category: 'Team', text: 'Technical debt is tracked and regularly addressed.', weight: 2, maxScore: 5 },
+
+  // ─── ART (12 questions) ───────────────────────────────────────────────────
+  { id: 'a1',  category: 'ART', text: 'PI Planning events are held regularly with all teams participating.', weight: 3, maxScore: 5 },
+  { id: 'a2',  category: 'ART', text: 'Teams synchronize dependencies effectively during PI Planning.', weight: 3, maxScore: 5 },
+  { id: 'a3',  category: 'ART', text: 'ART-level metrics (e.g., predictability, flow) are tracked.', weight: 2, maxScore: 5 },
+  { id: 'a4',  category: 'ART', text: 'The Release Train Engineer (RTE) actively facilitates ART events.', weight: 2, maxScore: 5 },
+  { id: 'a5',  category: 'ART', text: 'Inspect & Adapt workshops produce a structured improvement backlog.', weight: 3, maxScore: 5 },
+  { id: 'a6',  category: 'ART', text: 'Teams share architectural guidelines and common standards.', weight: 2, maxScore: 5 },
+  { id: 'a7',  category: 'ART', text: 'Cross-team dependencies are visible and managed proactively.', weight: 3, maxScore: 5 },
+  { id: 'a8',  category: 'ART', text: 'Program Increment objectives are clearly defined and tracked.', weight: 3, maxScore: 5 },
+  { id: 'a9',  category: 'ART', text: 'Continuous delivery pipeline is implemented across ART teams.', weight: 2, maxScore: 5 },
+  { id: 'a10', category: 'ART', text: 'System demos integrate output from all teams each sprint.', weight: 2, maxScore: 5 },
+  { id: 'a11', category: 'ART', text: 'The ART has a shared roadmap aligned with business priorities.', weight: 2, maxScore: 5 },
+  { id: 'a12', category: 'ART', text: 'DevOps practices are embedded across the ART.', weight: 2, maxScore: 5 },
+
+  // ─── PROGRAM (12 questions) ───────────────────────────────────────────────
+  { id: 'p1',  category: 'Program', text: 'Features are clearly defined with acceptance criteria before implementation.', weight: 3, maxScore: 5 },
+  { id: 'p2',  category: 'Program', text: 'Program backlog is prioritized based on business value and risk.', weight: 3, maxScore: 5 },
+  { id: 'p3',  category: 'Program', text: 'Product Managers are engaged and available to teams regularly.', weight: 2, maxScore: 5 },
+  { id: 'p4',  category: 'Program', text: 'Release cadence is predictable and adhered to.', weight: 2, maxScore: 5 },
+  { id: 'p5',  category: 'Program', text: 'Customer feedback is systematically incorporated into the roadmap.', weight: 3, maxScore: 5 },
+  { id: 'p6',  category: 'Program', text: 'Architecture is aligned with program-level capacity allocation.', weight: 2, maxScore: 5 },
+  { id: 'p7',  category: 'Program', text: 'KPIs and OKRs are defined at the program level and reviewed regularly.', weight: 3, maxScore: 5 },
+  { id: 'p8',  category: 'Program', text: 'Cross-program dependencies are identified and managed early.', weight: 2, maxScore: 5 },
+  { id: 'p9',  category: 'Program', text: 'Risk is tracked in a visible risk register with mitigation actions.', weight: 2, maxScore: 5 },
+  { id: 'p10', category: 'Program', text: 'Budget and resources are allocated flexibly based on priorities.', weight: 2, maxScore: 5 },
+  { id: 'p11', category: 'Program', text: 'Value streams are mapped and continuously optimized.', weight: 2, maxScore: 5 },
+  { id: 'p12', category: 'Program', text: 'Program-level impediments are escalated and resolved promptly.', weight: 2, maxScore: 5 },
+
+  // ─── PORTFOLIO (12 questions) ─────────────────────────────────────────────
+  { id: 'pf1',  category: 'Portfolio', text: 'Strategic themes are defined and communicated to all ARTs.', weight: 3, maxScore: 5 },
+  { id: 'pf2',  category: 'Portfolio', text: 'Portfolio Kanban is used to manage the flow of epics.', weight: 3, maxScore: 5 },
+  { id: 'pf3',  category: 'Portfolio', text: 'Lean budgeting replaces project-based cost accounting.', weight: 3, maxScore: 5 },
+  { id: 'pf4',  category: 'Portfolio', text: 'Guardrails are established to guide portfolio investment decisions.', weight: 2, maxScore: 5 },
+  { id: 'pf5',  category: 'Portfolio', text: 'Business owners are actively engaged in portfolio governance.', weight: 2, maxScore: 5 },
+  { id: 'pf6',  category: 'Portfolio', text: 'Portfolio epic hypotheses are validated with data before full investment.', weight: 2, maxScore: 5 },
+  { id: 'pf7',  category: 'Portfolio', text: 'Value streams are funded based on outcomes, not headcount.', weight: 3, maxScore: 5 },
+  { id: 'pf8',  category: 'Portfolio', text: 'OKRs cascade from portfolio to ART to team levels.', weight: 2, maxScore: 5 },
+  { id: 'pf9',  category: 'Portfolio', text: 'Portfolio-level metrics are reviewed in regular cadence.', weight: 2, maxScore: 5 },
+  { id: 'pf10', category: 'Portfolio', text: 'Enterprise architecture supports portfolio agility.', weight: 2, maxScore: 5 },
+  { id: 'pf11', category: 'Portfolio', text: 'Strategic alignment is validated at each PI boundary.', weight: 2, maxScore: 5 },
+  { id: 'pf12', category: 'Portfolio', text: 'Portfolio backlog is regularly refined and re-prioritized.', weight: 2, maxScore: 5 },
+
+  // ─── ORGANIZATIONAL (12 questions) ────────────────────────────────────────
+  { id: 'o1',  category: 'Organizational', text: 'Senior leadership actively sponsors and participates in Agile transformation.', weight: 3, maxScore: 5 },
+  { id: 'o2',  category: 'Organizational', text: 'Organizational structure supports stable, cross-functional teams.', weight: 3, maxScore: 5 },
+  { id: 'o3',  category: 'Organizational', text: 'HR policies (hiring, performance reviews) align with Agile values.', weight: 2, maxScore: 5 },
+  { id: 'o4',  category: 'Organizational', text: 'A culture of psychological safety and experimentation is evident.', weight: 3, maxScore: 5 },
+  { id: 'o5',  category: 'Organizational', text: 'Agile coaching and training programs are available organization-wide.', weight: 2, maxScore: 5 },
+  { id: 'o6',  category: 'Organizational', text: 'Knowledge sharing communities of practice (CoPs) are active.', weight: 2, maxScore: 5 },
+  { id: 'o7',  category: 'Organizational', text: 'Change management practices support continuous transformation.', weight: 2, maxScore: 5 },
+  { id: 'o8',  category: 'Organizational', text: 'Technology platforms enable collaboration and transparency.', weight: 2, maxScore: 5 },
+  { id: 'o9',  category: 'Organizational', text: 'Teams are empowered to make decisions without heavy approval chains.', weight: 3, maxScore: 5 },
+  { id: 'o10', category: 'Organizational', text: 'Organizational impediments are escalated and resolved at leadership level.', weight: 2, maxScore: 5 },
+  { id: 'o11', category: 'Organizational', text: 'Agile transformation progress is tracked and reported transparently.', weight: 2, maxScore: 5 },
+  { id: 'o12', category: 'Organizational', text: 'The organization continuously measures and improves business agility.', weight: 3, maxScore: 5 },
+]

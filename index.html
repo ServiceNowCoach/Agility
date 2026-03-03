@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agility Maturity Assessment</title>
+    <style>
+      @media print {
+        /* Hide nav and action buttons */
+        nav,
+        .no-print { display: none !important; }
+        /* Remove background colours that don't print well */
+        body { background: white !important; }
+        /* Ensure content fills the page */
+        main { padding: 0 !important; }
+        .print-break { page-break-before: always; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
