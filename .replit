@@ -8,6 +8,7 @@ channel = "stable-24_05"
 run = ["sh", "-c", "pnpm install && pnpm build && pnpm preview"]
 deploymentTarget = "static"
 publicDir = "dist"
+build = ["npm", "run", "build"]
 
 [[ports]]
 localPort = 4173
